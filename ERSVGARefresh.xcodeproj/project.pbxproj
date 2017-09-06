@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		256AE7978D0DBE6B6358A4E4 /* libPods-ERSVGARefresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4AE4FE77629299C6682733A /* libPods-ERSVGARefresh.a */; };
 		880B38FB1F5FD95D001ED095 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 880B38FA1F5FD95D001ED095 /* main.m */; };
 		880B38FE1F5FD95D001ED095 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 880B38FD1F5FD95D001ED095 /* AppDelegate.m */; };
 		880B39011F5FD95D001ED095 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880B39001F5FD95D001ED095 /* ViewController.m */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		284433B438A8BB10077495CE /* Pods-ERSVGARefresh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERSVGARefresh.release.xcconfig"; path = "Pods/Target Support Files/Pods-ERSVGARefresh/Pods-ERSVGARefresh.release.xcconfig"; sourceTree = "<group>"; };
 		880B38F61F5FD95D001ED095 /* ERSVGARefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ERSVGARefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		880B38FA1F5FD95D001ED095 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		880B38FC1F5FD95D001ED095 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,6 +30,8 @@
 		880B39081F5FD95D001ED095 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		880B390A1F5FD95D001ED095 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		880B39101F5FDB10001ED095 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		B4AE4FE77629299C6682733A /* libPods-ERSVGARefresh.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ERSVGARefresh.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEF98A702917D96E30DFAC5E /* Pods-ERSVGARefresh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERSVGARefresh.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ERSVGARefresh/Pods-ERSVGARefresh.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,12 +39,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				256AE7978D0DBE6B6358A4E4 /* libPods-ERSVGARefresh.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		64EABBFB910D478DDEE17206 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FEF98A702917D96E30DFAC5E /* Pods-ERSVGARefresh.debug.xcconfig */,
+				284433B438A8BB10077495CE /* Pods-ERSVGARefresh.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		880B38ED1F5FD95D001ED095 = {
 			isa = PBXGroup;
 			children = (
@@ -48,6 +62,8 @@
 				880B39981F5FE2EE001ED095 /* ERRSVGARefresh */,
 				880B38F81F5FD95D001ED095 /* ERSVGARefresh */,
 				880B38F71F5FD95D001ED095 /* Products */,
+				64EABBFB910D478DDEE17206 /* Pods */,
+				AC62DF6EC518F370F1F65697 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +106,14 @@
 			path = ERRSVGARefresh;
 			sourceTree = "<group>";
 		};
+		AC62DF6EC518F370F1F65697 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4AE4FE77629299C6682733A /* libPods-ERSVGARefresh.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -97,9 +121,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 880B390D1F5FD95D001ED095 /* Build configuration list for PBXNativeTarget "ERSVGARefresh" */;
 			buildPhases = (
+				17E0BCC238297CB086662073 /* [CP] Check Pods Manifest.lock */,
 				880B38F21F5FD95D001ED095 /* Sources */,
 				880B38F31F5FD95D001ED095 /* Frameworks */,
 				880B38F41F5FD95D001ED095 /* Resources */,
+				BB108C3987DF8411FE0CD434 /* [CP] Embed Pods Frameworks */,
+				C51B5F16E73D08B10D1A8B76 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -157,6 +184,60 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17E0BCC238297CB086662073 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ERSVGARefresh-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB108C3987DF8411FE0CD434 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ERSVGARefresh/Pods-ERSVGARefresh-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C51B5F16E73D08B10D1A8B76 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ERSVGARefresh/Pods-ERSVGARefresh-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ERSVGARefresh/Pods-ERSVGARefresh-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		880B38F21F5FD95D001ED095 /* Sources */ = {
@@ -283,6 +364,7 @@
 		};
 		880B390E1F5FD95D001ED095 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FEF98A702917D96E30DFAC5E /* Pods-ERSVGARefresh.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7GPHW87L24;
@@ -296,6 +378,7 @@
 		};
 		880B390F1F5FD95D001ED095 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 284433B438A8BB10077495CE /* Pods-ERSVGARefresh.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7GPHW87L24;
