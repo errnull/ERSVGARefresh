@@ -45,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				880B39101F5FDB10001ED095 /* .gitignore */,
+				880B39981F5FE2EE001ED095 /* ERRSVGARefresh */,
 				880B38F81F5FD95D001ED095 /* ERSVGARefresh */,
 				880B38F71F5FD95D001ED095 /* Products */,
 			);
@@ -66,9 +67,6 @@
 				880B38FF1F5FD95D001ED095 /* ViewController.h */,
 				880B39001F5FD95D001ED095 /* ViewController.m */,
 				880B39021F5FD95D001ED095 /* Main.storyboard */,
-				880B39051F5FD95D001ED095 /* Assets.xcassets */,
-				880B39071F5FD95D001ED095 /* LaunchScreen.storyboard */,
-				880B390A1F5FD95D001ED095 /* Info.plist */,
 				880B38F91F5FD95D001ED095 /* Supporting Files */,
 			);
 			path = ERSVGARefresh;
@@ -77,9 +75,19 @@
 		880B38F91F5FD95D001ED095 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				880B39071F5FD95D001ED095 /* LaunchScreen.storyboard */,
+				880B39051F5FD95D001ED095 /* Assets.xcassets */,
+				880B390A1F5FD95D001ED095 /* Info.plist */,
 				880B38FA1F5FD95D001ED095 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		880B39981F5FE2EE001ED095 /* ERRSVGARefresh */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ERRSVGARefresh;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
