@@ -17,7 +17,7 @@
 
 @implementation ERRefreshSVGAHeader
 
-static SVGAParser *parser;
+static SVGAParser *_parser;
 
 #pragma 懒加载
 - (SVGAPlayer *)aPlayer {
@@ -28,12 +28,20 @@ static SVGAParser *parser;
     return _aPlayer;
 }
 
+- (SVGAParser *)parser {
+    if (!_parser) {
+        _parser = [[SVGAParser alloc] init];
+    }
+    return _parser;
+}
+
 #pragma Public Method
 - (void)setAnimationWithURL:(SVGAVideoEntity *)videoItem
                    duration:(NSTimeInterval)duration
                    forState:(MJRefreshState)state
 {
     self.aPlayer.videoItem = videoItem;
+    self.aPlayer.stopWhenTracking = NO;
     if (videoItem.videoSize.height > self.mj_h) {
         self.mj_h = 100;
     }
@@ -42,23 +50,25 @@ static SVGAParser *parser;
 - (void)setAnimationWithURL:(nonnull NSURL *)svgaURL
                    forState:(MJRefreshState)state
 {
-    parser = [[SVGAParser alloc] init];
+    [[self parser] parseWithURL:svgaURL
+         completionBlock:^(SVGAVideoEntity * _Nullable videoItem) {
+             
+             [self setAnimationWithURL:videoItem
+                              duration:videoItem.frames * videoItem.FPS
+                              forState:state];
+         } failureBlock:nil];
+}
+
+- (void)setAnimationWithData:(NSData *)data
+                    forState:(MJRefreshState)state {
     
-//    [parser parseWithURL:svgaURL
-//         completionBlock:^(SVGAVideoEntity * _Nullable videoItem) {
-//             
-//             [self setAnimationWithURL:videoItem
-//                              duration:videoItem.frames * videoItem.FPS
-//                              forState:state];
-//         } failureBlock:nil];
-    
-    [parser parseWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"loading.svga" ofType:nil]]
-                 cacheKey:@"loading"
-          completionBlock:^(SVGAVideoEntity * _Nonnull videoItem) {
-              [self setAnimationWithURL:videoItem
-                               duration:videoItem.frames * videoItem.FPS
-                               forState:state];
-          } failureBlock:nil];
+        [[self parser] parseWithData:data
+                     cacheKey:@"loading"
+              completionBlock:^(SVGAVideoEntity * _Nonnull videoItem) {
+                  [self setAnimationWithURL:videoItem
+                                   duration:videoItem.frames * videoItem.FPS
+                                   forState:state];
+              } failureBlock:nil];
 }
 
 #pragma 父类方法
@@ -73,9 +83,9 @@ static SVGAParser *parser;
 {
     [super setPullingPercent:pullingPercent];
     
-    if (pullingPercent > 1) pullingPercent = 1;
+    if (self.state != MJRefreshStateIdle || !self.aPlayer || pullingPercent > 1) return;
     
-//    [self.aPlayer stepToPercentage:pullingPercent andPlay:NO];
+    [self.aPlayer stepToPercentage:pullingPercent andPlay:NO];
 }
 
 - (void)placeSubviews
@@ -91,7 +101,7 @@ static SVGAParser *parser;
     
 //    self.aPlayer.frame = self.bounds;
 //    if (self.stateLabel.hidden && self.lastUpdatedTimeLabel.hidden) {
-    self.aPlayer.contentMode = UIViewContentModeCenter;
+//    self.aPlayer.contentMode = UIViewContentModeCenter;
 //    } else {
 //        self.aPlayer.contentMode = UIViewContentModeRight;
 //        
@@ -111,16 +121,14 @@ static SVGAParser *parser;
     
     NSLog(@"state: ---  %ld",(long)state);
     
-    [self.aPlayer startAnimation];
-    
     // 根据状态做事情
-//    if (state == MJRefreshStatePulling ) {
-//        
-//        [self.aPlayer startAnimation];
-//        
-//    } else if (state == MJRefreshStateIdle) {
-//        [self.aPlayer stopAnimation];
-//    }
+    if (state == MJRefreshStatePulling || state == MJRefreshStateRefreshing) {
+        
+        [self.aPlayer stepToFrame:0 andPlay:YES];
+        
+    } else if (state == MJRefreshStateIdle) {
+        [self.aPlayer stopAnimation];
+    }
 }
 
 @end

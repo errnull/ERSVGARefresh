@@ -31,7 +31,6 @@
 		88086C111F60EBF6007FDBE6 /* loading.svga in Resources */ = {isa = PBXBuildFile; fileRef = 88086BDE1F60EBF6007FDBE6 /* loading.svga */; };
 		88086C121F60EBF6007FDBE6 /* SVGAContentLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BE01F60EBF6007FDBE6 /* SVGAContentLayer.m */; };
 		88086C131F60EBF6007FDBE6 /* SVGAVideoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BE31F60EBF6007FDBE6 /* SVGAVideoEntity.m */; };
-		88086C141F60EBF6007FDBE6 /* SVGAPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BE61F60EBF6007FDBE6 /* SVGAPlayer.m */; };
 		88086C151F60EBF6007FDBE6 /* SVGAVideoSpriteEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BE71F60EBF6007FDBE6 /* SVGAVideoSpriteEntity.m */; };
 		88086C161F60EBF6007FDBE6 /* SVGA.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BE81F60EBF6007FDBE6 /* SVGA.m */; };
 		88086C171F60EBF6007FDBE6 /* SVGAExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BE91F60EBF6007FDBE6 /* SVGAExporter.m */; };
@@ -43,6 +42,7 @@
 		88086C1D1F60EBF6007FDBE6 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BF71F60EBF6007FDBE6 /* YYWeakProxy.m */; };
 		88086C1E1F60EBF6007FDBE6 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BF91F60EBF6007FDBE6 /* YYFPSLabel.m */; };
 		88086C1F1F60EBF6007FDBE6 /* ERRefreshSVGAHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BFC1F60EBF6007FDBE6 /* ERRefreshSVGAHeader.m */; };
+		88086C241F611ADD007FDBE6 /* SVGAPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086C231F611ADD007FDBE6 /* SVGAPlayer.m */; };
 		880B38FB1F5FD95D001ED095 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 880B38FA1F5FD95D001ED095 /* main.m */; };
 		880B38FE1F5FD95D001ED095 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 880B38FD1F5FD95D001ED095 /* AppDelegate.m */; };
 		880B39011F5FD95D001ED095 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880B39001F5FD95D001ED095 /* ViewController.m */; };
@@ -101,7 +101,6 @@
 		88086BE31F60EBF6007FDBE6 /* SVGAVideoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGAVideoEntity.m; sourceTree = "<group>"; };
 		88086BE41F60EBF6007FDBE6 /* SVGAVectorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGAVectorLayer.h; sourceTree = "<group>"; };
 		88086BE51F60EBF6007FDBE6 /* SVGABitmapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGABitmapLayer.h; sourceTree = "<group>"; };
-		88086BE61F60EBF6007FDBE6 /* SVGAPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGAPlayer.m; sourceTree = "<group>"; };
 		88086BE71F60EBF6007FDBE6 /* SVGAVideoSpriteEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGAVideoSpriteEntity.m; sourceTree = "<group>"; };
 		88086BE81F60EBF6007FDBE6 /* SVGA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGA.m; sourceTree = "<group>"; };
 		88086BE91F60EBF6007FDBE6 /* SVGAExporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGAExporter.m; sourceTree = "<group>"; };
@@ -110,7 +109,6 @@
 		88086BEC1F60EBF6007FDBE6 /* SVGAVideoSpriteFrameEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGAVideoSpriteFrameEntity.m; sourceTree = "<group>"; };
 		88086BED1F60EBF6007FDBE6 /* SVGABezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGABezierPath.m; sourceTree = "<group>"; };
 		88086BEE1F60EBF6007FDBE6 /* SVGAContentLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGAContentLayer.h; sourceTree = "<group>"; };
-		88086BEF1F60EBF6007FDBE6 /* SVGAPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGAPlayer.h; sourceTree = "<group>"; };
 		88086BF01F60EBF6007FDBE6 /* SVGABitmapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGABitmapLayer.m; sourceTree = "<group>"; };
 		88086BF11F60EBF6007FDBE6 /* SVGAVectorLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGAVectorLayer.m; sourceTree = "<group>"; };
 		88086BF21F60EBF6007FDBE6 /* SVGAExporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGAExporter.h; sourceTree = "<group>"; };
@@ -123,6 +121,8 @@
 		88086BFA1F60EBF6007FDBE6 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
 		88086BFB1F60EBF6007FDBE6 /* ERRefreshSVGAHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERRefreshSVGAHeader.h; sourceTree = "<group>"; };
 		88086BFC1F60EBF6007FDBE6 /* ERRefreshSVGAHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERRefreshSVGAHeader.m; sourceTree = "<group>"; };
+		88086C221F611ADD007FDBE6 /* SVGAPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGAPlayer.h; sourceTree = "<group>"; };
+		88086C231F611ADD007FDBE6 /* SVGAPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGAPlayer.m; sourceTree = "<group>"; };
 		880B38F61F5FD95D001ED095 /* ERSVGARefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ERSVGARefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		880B38FA1F5FD95D001ED095 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		880B38FC1F5FD95D001ED095 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -240,11 +240,11 @@
 		88086BCB1F60EBF6007FDBE6 /* Header */ = {
 			isa = PBXGroup;
 			children = (
+				88086BCF1F60EBF6007FDBE6 /* MJRefreshNormalHeader.h */,
 				88086BCC1F60EBF6007FDBE6 /* MJRefreshNormalHeader.m */,
 				88086BCD1F60EBF6007FDBE6 /* MJRefreshStateHeader.h */,
-				88086BCE1F60EBF6007FDBE6 /* MJRefreshGifHeader.h */,
-				88086BCF1F60EBF6007FDBE6 /* MJRefreshNormalHeader.h */,
 				88086BD01F60EBF6007FDBE6 /* MJRefreshStateHeader.m */,
+				88086BCE1F60EBF6007FDBE6 /* MJRefreshGifHeader.h */,
 				88086BD11F60EBF6007FDBE6 /* MJRefreshGifHeader.m */,
 			);
 			path = Header;
@@ -278,13 +278,14 @@
 		88086BDF1F60EBF6007FDBE6 /* SVGAPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				88086C221F611ADD007FDBE6 /* SVGAPlayer.h */,
+				88086C231F611ADD007FDBE6 /* SVGAPlayer.m */,
 				88086BE01F60EBF6007FDBE6 /* SVGAContentLayer.m */,
 				88086BE11F60EBF6007FDBE6 /* SVGAVideoSpriteFrameEntity.h */,
 				88086BE21F60EBF6007FDBE6 /* SVGABezierPath.h */,
 				88086BE31F60EBF6007FDBE6 /* SVGAVideoEntity.m */,
 				88086BE41F60EBF6007FDBE6 /* SVGAVectorLayer.h */,
 				88086BE51F60EBF6007FDBE6 /* SVGABitmapLayer.h */,
-				88086BE61F60EBF6007FDBE6 /* SVGAPlayer.m */,
 				88086BE71F60EBF6007FDBE6 /* SVGAVideoSpriteEntity.m */,
 				88086BE81F60EBF6007FDBE6 /* SVGA.m */,
 				88086BE91F60EBF6007FDBE6 /* SVGAExporter.m */,
@@ -293,7 +294,6 @@
 				88086BEC1F60EBF6007FDBE6 /* SVGAVideoSpriteFrameEntity.m */,
 				88086BED1F60EBF6007FDBE6 /* SVGABezierPath.m */,
 				88086BEE1F60EBF6007FDBE6 /* SVGAContentLayer.h */,
-				88086BEF1F60EBF6007FDBE6 /* SVGAPlayer.h */,
 				88086BF01F60EBF6007FDBE6 /* SVGABitmapLayer.m */,
 				88086BF11F60EBF6007FDBE6 /* SVGAVectorLayer.m */,
 				88086BF21F60EBF6007FDBE6 /* SVGAExporter.h */,
@@ -520,6 +520,7 @@
 				88086C171F60EBF6007FDBE6 /* SVGAExporter.m in Sources */,
 				88086C1A1F60EBF6007FDBE6 /* SVGABezierPath.m in Sources */,
 				880B38FE1F5FD95D001ED095 /* AppDelegate.m in Sources */,
+				88086C241F611ADD007FDBE6 /* SVGAPlayer.m in Sources */,
 				88086C041F60EBF6007FDBE6 /* MJRefreshBackStateFooter.m in Sources */,
 				88086C1E1F60EBF6007FDBE6 /* YYFPSLabel.m in Sources */,
 				88086C121F60EBF6007FDBE6 /* SVGAContentLayer.m in Sources */,
@@ -534,7 +535,6 @@
 				88086C1D1F60EBF6007FDBE6 /* YYWeakProxy.m in Sources */,
 				88086C021F60EBF6007FDBE6 /* UIView+MJExtension.m in Sources */,
 				88086C151F60EBF6007FDBE6 /* SVGAVideoSpriteEntity.m in Sources */,
-				88086C141F60EBF6007FDBE6 /* SVGAPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

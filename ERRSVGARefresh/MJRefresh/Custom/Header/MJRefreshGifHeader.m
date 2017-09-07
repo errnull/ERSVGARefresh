@@ -77,7 +77,9 @@
 - (void)setPullingPercent:(CGFloat)pullingPercent
 {
     [super setPullingPercent:pullingPercent];
+    
     NSArray *images = self.stateImages[@(MJRefreshStateIdle)];
+    
     if (self.state != MJRefreshStateIdle || images.count == 0) return;
     // 停止动画
     [self.gifView stopAnimating];

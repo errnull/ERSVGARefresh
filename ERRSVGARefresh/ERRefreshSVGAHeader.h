@@ -14,11 +14,10 @@
 
 @property (weak, nonatomic, readonly) SVGAPlayer * _Nullable aPlayer;
 
-- (void)setAnimationWithURL:(SVGAVideoEntity *_Nullable)videoItem
-                   duration:(NSTimeInterval)duration
+- (void)setAnimationWithURL:(nonnull NSURL *)svgaURL
                    forState:(MJRefreshState)state;
 
-- (void)setAnimationWithURL:(nonnull NSURL *)svgaURL
+- (void)setAnimationWithData:(nonnull NSData *)data
                    forState:(MJRefreshState)state;
 
 @end
