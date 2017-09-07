@@ -8,6 +8,41 @@
 
 /* Begin PBXBuildFile section */
 		256AE7978D0DBE6B6358A4E4 /* libPods-ERSVGARefresh.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B4AE4FE77629299C6682733A /* libPods-ERSVGARefresh.a */; };
+		88086BFD1F60EBF6007FDBE6 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BAF1F60EBF6007FDBE6 /* UIScrollView+MJRefresh.m */; };
+		88086BFE1F60EBF6007FDBE6 /* MJRefreshConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BB01F60EBF6007FDBE6 /* MJRefreshConst.m */; };
+		88086BFF1F60EBF6007FDBE6 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 88086BB41F60EBF6007FDBE6 /* MJRefresh.bundle */; };
+		88086C001F60EBF6007FDBE6 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BB61F60EBF6007FDBE6 /* UIScrollView+MJExtension.m */; };
+		88086C011F60EBF6007FDBE6 /* NSBundle+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BB91F60EBF6007FDBE6 /* NSBundle+MJRefresh.m */; };
+		88086C021F60EBF6007FDBE6 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BBA1F60EBF6007FDBE6 /* UIView+MJExtension.m */; };
+		88086C031F60EBF6007FDBE6 /* MJRefreshBackGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BC11F60EBF6007FDBE6 /* MJRefreshBackGifFooter.m */; };
+		88086C041F60EBF6007FDBE6 /* MJRefreshBackStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BC21F60EBF6007FDBE6 /* MJRefreshBackStateFooter.m */; };
+		88086C051F60EBF6007FDBE6 /* MJRefreshBackNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BC31F60EBF6007FDBE6 /* MJRefreshBackNormalFooter.m */; };
+		88086C061F60EBF6007FDBE6 /* MJRefreshAutoStateFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BC81F60EBF6007FDBE6 /* MJRefreshAutoStateFooter.m */; };
+		88086C071F60EBF6007FDBE6 /* MJRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BC91F60EBF6007FDBE6 /* MJRefreshAutoGifFooter.m */; };
+		88086C081F60EBF6007FDBE6 /* MJRefreshAutoNormalFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BCA1F60EBF6007FDBE6 /* MJRefreshAutoNormalFooter.m */; };
+		88086C091F60EBF6007FDBE6 /* MJRefreshNormalHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BCC1F60EBF6007FDBE6 /* MJRefreshNormalHeader.m */; };
+		88086C0A1F60EBF6007FDBE6 /* MJRefreshStateHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BD01F60EBF6007FDBE6 /* MJRefreshStateHeader.m */; };
+		88086C0B1F60EBF6007FDBE6 /* MJRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BD11F60EBF6007FDBE6 /* MJRefreshGifHeader.m */; };
+		88086C0C1F60EBF6007FDBE6 /* MJRefreshFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BD31F60EBF6007FDBE6 /* MJRefreshFooter.m */; };
+		88086C0D1F60EBF6007FDBE6 /* MJRefreshHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BD51F60EBF6007FDBE6 /* MJRefreshHeader.m */; };
+		88086C0E1F60EBF6007FDBE6 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BD71F60EBF6007FDBE6 /* MJRefreshBackFooter.m */; };
+		88086C0F1F60EBF6007FDBE6 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BD81F60EBF6007FDBE6 /* MJRefreshAutoFooter.m */; };
+		88086C101F60EBF6007FDBE6 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BDA1F60EBF6007FDBE6 /* MJRefreshComponent.m */; };
+		88086C111F60EBF6007FDBE6 /* loading.svga in Resources */ = {isa = PBXBuildFile; fileRef = 88086BDE1F60EBF6007FDBE6 /* loading.svga */; };
+		88086C121F60EBF6007FDBE6 /* SVGAContentLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BE01F60EBF6007FDBE6 /* SVGAContentLayer.m */; };
+		88086C131F60EBF6007FDBE6 /* SVGAVideoEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BE31F60EBF6007FDBE6 /* SVGAVideoEntity.m */; };
+		88086C141F60EBF6007FDBE6 /* SVGAPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BE61F60EBF6007FDBE6 /* SVGAPlayer.m */; };
+		88086C151F60EBF6007FDBE6 /* SVGAVideoSpriteEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BE71F60EBF6007FDBE6 /* SVGAVideoSpriteEntity.m */; };
+		88086C161F60EBF6007FDBE6 /* SVGA.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BE81F60EBF6007FDBE6 /* SVGA.m */; };
+		88086C171F60EBF6007FDBE6 /* SVGAExporter.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BE91F60EBF6007FDBE6 /* SVGAExporter.m */; };
+		88086C181F60EBF6007FDBE6 /* SVGAParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BEA1F60EBF6007FDBE6 /* SVGAParser.m */; };
+		88086C191F60EBF6007FDBE6 /* SVGAVideoSpriteFrameEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BEC1F60EBF6007FDBE6 /* SVGAVideoSpriteFrameEntity.m */; };
+		88086C1A1F60EBF6007FDBE6 /* SVGABezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BED1F60EBF6007FDBE6 /* SVGABezierPath.m */; };
+		88086C1B1F60EBF6007FDBE6 /* SVGABitmapLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BF01F60EBF6007FDBE6 /* SVGABitmapLayer.m */; };
+		88086C1C1F60EBF6007FDBE6 /* SVGAVectorLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BF11F60EBF6007FDBE6 /* SVGAVectorLayer.m */; };
+		88086C1D1F60EBF6007FDBE6 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BF71F60EBF6007FDBE6 /* YYWeakProxy.m */; };
+		88086C1E1F60EBF6007FDBE6 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BF91F60EBF6007FDBE6 /* YYFPSLabel.m */; };
+		88086C1F1F60EBF6007FDBE6 /* ERRefreshSVGAHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 88086BFC1F60EBF6007FDBE6 /* ERRefreshSVGAHeader.m */; };
 		880B38FB1F5FD95D001ED095 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 880B38FA1F5FD95D001ED095 /* main.m */; };
 		880B38FE1F5FD95D001ED095 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 880B38FD1F5FD95D001ED095 /* AppDelegate.m */; };
 		880B39011F5FD95D001ED095 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 880B39001F5FD95D001ED095 /* ViewController.m */; };
@@ -19,6 +54,75 @@
 
 /* Begin PBXFileReference section */
 		284433B438A8BB10077495CE /* Pods-ERSVGARefresh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ERSVGARefresh.release.xcconfig"; path = "Pods/Target Support Files/Pods-ERSVGARefresh/Pods-ERSVGARefresh.release.xcconfig"; sourceTree = "<group>"; };
+		88086BAF1F60EBF6007FDBE6 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
+		88086BB01F60EBF6007FDBE6 /* MJRefreshConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshConst.m; sourceTree = "<group>"; };
+		88086BB11F60EBF6007FDBE6 /* UIScrollView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJExtension.h"; sourceTree = "<group>"; };
+		88086BB21F60EBF6007FDBE6 /* MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefresh.h; sourceTree = "<group>"; };
+		88086BB31F60EBF6007FDBE6 /* NSBundle+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+MJRefresh.h"; sourceTree = "<group>"; };
+		88086BB41F60EBF6007FDBE6 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
+		88086BB51F60EBF6007FDBE6 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
+		88086BB61F60EBF6007FDBE6 /* UIScrollView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJExtension.m"; sourceTree = "<group>"; };
+		88086BB71F60EBF6007FDBE6 /* MJRefreshConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshConst.h; sourceTree = "<group>"; };
+		88086BB81F60EBF6007FDBE6 /* UIScrollView+MJRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+MJRefresh.h"; sourceTree = "<group>"; };
+		88086BB91F60EBF6007FDBE6 /* NSBundle+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+MJRefresh.m"; sourceTree = "<group>"; };
+		88086BBA1F60EBF6007FDBE6 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		88086BBE1F60EBF6007FDBE6 /* MJRefreshBackGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackGifFooter.h; sourceTree = "<group>"; };
+		88086BBF1F60EBF6007FDBE6 /* MJRefreshBackStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackStateFooter.h; sourceTree = "<group>"; };
+		88086BC01F60EBF6007FDBE6 /* MJRefreshBackNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackNormalFooter.h; sourceTree = "<group>"; };
+		88086BC11F60EBF6007FDBE6 /* MJRefreshBackGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackGifFooter.m; sourceTree = "<group>"; };
+		88086BC21F60EBF6007FDBE6 /* MJRefreshBackStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackStateFooter.m; sourceTree = "<group>"; };
+		88086BC31F60EBF6007FDBE6 /* MJRefreshBackNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackNormalFooter.m; sourceTree = "<group>"; };
+		88086BC51F60EBF6007FDBE6 /* MJRefreshAutoStateFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoStateFooter.h; sourceTree = "<group>"; };
+		88086BC61F60EBF6007FDBE6 /* MJRefreshAutoNormalFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoNormalFooter.h; sourceTree = "<group>"; };
+		88086BC71F60EBF6007FDBE6 /* MJRefreshAutoGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoGifFooter.h; sourceTree = "<group>"; };
+		88086BC81F60EBF6007FDBE6 /* MJRefreshAutoStateFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoStateFooter.m; sourceTree = "<group>"; };
+		88086BC91F60EBF6007FDBE6 /* MJRefreshAutoGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoGifFooter.m; sourceTree = "<group>"; };
+		88086BCA1F60EBF6007FDBE6 /* MJRefreshAutoNormalFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoNormalFooter.m; sourceTree = "<group>"; };
+		88086BCC1F60EBF6007FDBE6 /* MJRefreshNormalHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshNormalHeader.m; sourceTree = "<group>"; };
+		88086BCD1F60EBF6007FDBE6 /* MJRefreshStateHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshStateHeader.h; sourceTree = "<group>"; };
+		88086BCE1F60EBF6007FDBE6 /* MJRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshGifHeader.h; sourceTree = "<group>"; };
+		88086BCF1F60EBF6007FDBE6 /* MJRefreshNormalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshNormalHeader.h; sourceTree = "<group>"; };
+		88086BD01F60EBF6007FDBE6 /* MJRefreshStateHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshStateHeader.m; sourceTree = "<group>"; };
+		88086BD11F60EBF6007FDBE6 /* MJRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshGifHeader.m; sourceTree = "<group>"; };
+		88086BD31F60EBF6007FDBE6 /* MJRefreshFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshFooter.m; sourceTree = "<group>"; };
+		88086BD41F60EBF6007FDBE6 /* MJRefreshComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshComponent.h; sourceTree = "<group>"; };
+		88086BD51F60EBF6007FDBE6 /* MJRefreshHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshHeader.m; sourceTree = "<group>"; };
+		88086BD61F60EBF6007FDBE6 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
+		88086BD71F60EBF6007FDBE6 /* MJRefreshBackFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshBackFooter.m; sourceTree = "<group>"; };
+		88086BD81F60EBF6007FDBE6 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
+		88086BD91F60EBF6007FDBE6 /* MJRefreshHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshHeader.h; sourceTree = "<group>"; };
+		88086BDA1F60EBF6007FDBE6 /* MJRefreshComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshComponent.m; sourceTree = "<group>"; };
+		88086BDB1F60EBF6007FDBE6 /* MJRefreshFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshFooter.h; sourceTree = "<group>"; };
+		88086BDC1F60EBF6007FDBE6 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
+		88086BDE1F60EBF6007FDBE6 /* loading.svga */ = {isa = PBXFileReference; lastKnownFileType = file; path = loading.svga; sourceTree = "<group>"; };
+		88086BE01F60EBF6007FDBE6 /* SVGAContentLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGAContentLayer.m; sourceTree = "<group>"; };
+		88086BE11F60EBF6007FDBE6 /* SVGAVideoSpriteFrameEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGAVideoSpriteFrameEntity.h; sourceTree = "<group>"; };
+		88086BE21F60EBF6007FDBE6 /* SVGABezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGABezierPath.h; sourceTree = "<group>"; };
+		88086BE31F60EBF6007FDBE6 /* SVGAVideoEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGAVideoEntity.m; sourceTree = "<group>"; };
+		88086BE41F60EBF6007FDBE6 /* SVGAVectorLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGAVectorLayer.h; sourceTree = "<group>"; };
+		88086BE51F60EBF6007FDBE6 /* SVGABitmapLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGABitmapLayer.h; sourceTree = "<group>"; };
+		88086BE61F60EBF6007FDBE6 /* SVGAPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGAPlayer.m; sourceTree = "<group>"; };
+		88086BE71F60EBF6007FDBE6 /* SVGAVideoSpriteEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGAVideoSpriteEntity.m; sourceTree = "<group>"; };
+		88086BE81F60EBF6007FDBE6 /* SVGA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGA.m; sourceTree = "<group>"; };
+		88086BE91F60EBF6007FDBE6 /* SVGAExporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGAExporter.m; sourceTree = "<group>"; };
+		88086BEA1F60EBF6007FDBE6 /* SVGAParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGAParser.m; sourceTree = "<group>"; };
+		88086BEB1F60EBF6007FDBE6 /* SVGAVideoEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGAVideoEntity.h; sourceTree = "<group>"; };
+		88086BEC1F60EBF6007FDBE6 /* SVGAVideoSpriteFrameEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGAVideoSpriteFrameEntity.m; sourceTree = "<group>"; };
+		88086BED1F60EBF6007FDBE6 /* SVGABezierPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGABezierPath.m; sourceTree = "<group>"; };
+		88086BEE1F60EBF6007FDBE6 /* SVGAContentLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGAContentLayer.h; sourceTree = "<group>"; };
+		88086BEF1F60EBF6007FDBE6 /* SVGAPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGAPlayer.h; sourceTree = "<group>"; };
+		88086BF01F60EBF6007FDBE6 /* SVGABitmapLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGABitmapLayer.m; sourceTree = "<group>"; };
+		88086BF11F60EBF6007FDBE6 /* SVGAVectorLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVGAVectorLayer.m; sourceTree = "<group>"; };
+		88086BF21F60EBF6007FDBE6 /* SVGAExporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGAExporter.h; sourceTree = "<group>"; };
+		88086BF31F60EBF6007FDBE6 /* SVGAParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGAParser.h; sourceTree = "<group>"; };
+		88086BF41F60EBF6007FDBE6 /* SVGA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGA.h; sourceTree = "<group>"; };
+		88086BF51F60EBF6007FDBE6 /* SVGAVideoSpriteEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVGAVideoSpriteEntity.h; sourceTree = "<group>"; };
+		88086BF71F60EBF6007FDBE6 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
+		88086BF81F60EBF6007FDBE6 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		88086BF91F60EBF6007FDBE6 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		88086BFA1F60EBF6007FDBE6 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		88086BFB1F60EBF6007FDBE6 /* ERRefreshSVGAHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ERRefreshSVGAHeader.h; sourceTree = "<group>"; };
+		88086BFC1F60EBF6007FDBE6 /* ERRefreshSVGAHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ERRefreshSVGAHeader.m; sourceTree = "<group>"; };
 		880B38F61F5FD95D001ED095 /* ERSVGARefresh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ERSVGARefresh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		880B38FA1F5FD95D001ED095 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		880B38FC1F5FD95D001ED095 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -55,11 +159,167 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		88086BAD1F60EB59007FDBE6 /* ERRSVGARefresh */ = {
+			isa = PBXGroup;
+			children = (
+				88086BDD1F60EBF6007FDBE6 /* Resource */,
+				88086BAE1F60EBF6007FDBE6 /* MJRefresh */,
+				88086BDF1F60EBF6007FDBE6 /* SVGAPlayer */,
+				88086BF61F60EBF6007FDBE6 /* YYFPSLabel */,
+				88086BFB1F60EBF6007FDBE6 /* ERRefreshSVGAHeader.h */,
+				88086BFC1F60EBF6007FDBE6 /* ERRefreshSVGAHeader.m */,
+			);
+			path = ERRSVGARefresh;
+			sourceTree = "<group>";
+		};
+		88086BAE1F60EBF6007FDBE6 /* MJRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				88086BAF1F60EBF6007FDBE6 /* UIScrollView+MJRefresh.m */,
+				88086BB01F60EBF6007FDBE6 /* MJRefreshConst.m */,
+				88086BB11F60EBF6007FDBE6 /* UIScrollView+MJExtension.h */,
+				88086BB21F60EBF6007FDBE6 /* MJRefresh.h */,
+				88086BB31F60EBF6007FDBE6 /* NSBundle+MJRefresh.h */,
+				88086BB41F60EBF6007FDBE6 /* MJRefresh.bundle */,
+				88086BB51F60EBF6007FDBE6 /* UIView+MJExtension.h */,
+				88086BB61F60EBF6007FDBE6 /* UIScrollView+MJExtension.m */,
+				88086BB71F60EBF6007FDBE6 /* MJRefreshConst.h */,
+				88086BB81F60EBF6007FDBE6 /* UIScrollView+MJRefresh.h */,
+				88086BB91F60EBF6007FDBE6 /* NSBundle+MJRefresh.m */,
+				88086BBA1F60EBF6007FDBE6 /* UIView+MJExtension.m */,
+				88086BBB1F60EBF6007FDBE6 /* Custom */,
+				88086BD21F60EBF6007FDBE6 /* Base */,
+			);
+			path = MJRefresh;
+			sourceTree = "<group>";
+		};
+		88086BBB1F60EBF6007FDBE6 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				88086BBC1F60EBF6007FDBE6 /* Footer */,
+				88086BCB1F60EBF6007FDBE6 /* Header */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		88086BBC1F60EBF6007FDBE6 /* Footer */ = {
+			isa = PBXGroup;
+			children = (
+				88086BBD1F60EBF6007FDBE6 /* Back */,
+				88086BC41F60EBF6007FDBE6 /* Auto */,
+			);
+			path = Footer;
+			sourceTree = "<group>";
+		};
+		88086BBD1F60EBF6007FDBE6 /* Back */ = {
+			isa = PBXGroup;
+			children = (
+				88086BBE1F60EBF6007FDBE6 /* MJRefreshBackGifFooter.h */,
+				88086BBF1F60EBF6007FDBE6 /* MJRefreshBackStateFooter.h */,
+				88086BC01F60EBF6007FDBE6 /* MJRefreshBackNormalFooter.h */,
+				88086BC11F60EBF6007FDBE6 /* MJRefreshBackGifFooter.m */,
+				88086BC21F60EBF6007FDBE6 /* MJRefreshBackStateFooter.m */,
+				88086BC31F60EBF6007FDBE6 /* MJRefreshBackNormalFooter.m */,
+			);
+			path = Back;
+			sourceTree = "<group>";
+		};
+		88086BC41F60EBF6007FDBE6 /* Auto */ = {
+			isa = PBXGroup;
+			children = (
+				88086BC51F60EBF6007FDBE6 /* MJRefreshAutoStateFooter.h */,
+				88086BC61F60EBF6007FDBE6 /* MJRefreshAutoNormalFooter.h */,
+				88086BC71F60EBF6007FDBE6 /* MJRefreshAutoGifFooter.h */,
+				88086BC81F60EBF6007FDBE6 /* MJRefreshAutoStateFooter.m */,
+				88086BC91F60EBF6007FDBE6 /* MJRefreshAutoGifFooter.m */,
+				88086BCA1F60EBF6007FDBE6 /* MJRefreshAutoNormalFooter.m */,
+			);
+			path = Auto;
+			sourceTree = "<group>";
+		};
+		88086BCB1F60EBF6007FDBE6 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				88086BCC1F60EBF6007FDBE6 /* MJRefreshNormalHeader.m */,
+				88086BCD1F60EBF6007FDBE6 /* MJRefreshStateHeader.h */,
+				88086BCE1F60EBF6007FDBE6 /* MJRefreshGifHeader.h */,
+				88086BCF1F60EBF6007FDBE6 /* MJRefreshNormalHeader.h */,
+				88086BD01F60EBF6007FDBE6 /* MJRefreshStateHeader.m */,
+				88086BD11F60EBF6007FDBE6 /* MJRefreshGifHeader.m */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		88086BD21F60EBF6007FDBE6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				88086BD31F60EBF6007FDBE6 /* MJRefreshFooter.m */,
+				88086BD41F60EBF6007FDBE6 /* MJRefreshComponent.h */,
+				88086BD51F60EBF6007FDBE6 /* MJRefreshHeader.m */,
+				88086BD61F60EBF6007FDBE6 /* MJRefreshAutoFooter.h */,
+				88086BD71F60EBF6007FDBE6 /* MJRefreshBackFooter.m */,
+				88086BD81F60EBF6007FDBE6 /* MJRefreshAutoFooter.m */,
+				88086BD91F60EBF6007FDBE6 /* MJRefreshHeader.h */,
+				88086BDA1F60EBF6007FDBE6 /* MJRefreshComponent.m */,
+				88086BDB1F60EBF6007FDBE6 /* MJRefreshFooter.h */,
+				88086BDC1F60EBF6007FDBE6 /* MJRefreshBackFooter.h */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		88086BDD1F60EBF6007FDBE6 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				88086BDE1F60EBF6007FDBE6 /* loading.svga */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		88086BDF1F60EBF6007FDBE6 /* SVGAPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				88086BE01F60EBF6007FDBE6 /* SVGAContentLayer.m */,
+				88086BE11F60EBF6007FDBE6 /* SVGAVideoSpriteFrameEntity.h */,
+				88086BE21F60EBF6007FDBE6 /* SVGABezierPath.h */,
+				88086BE31F60EBF6007FDBE6 /* SVGAVideoEntity.m */,
+				88086BE41F60EBF6007FDBE6 /* SVGAVectorLayer.h */,
+				88086BE51F60EBF6007FDBE6 /* SVGABitmapLayer.h */,
+				88086BE61F60EBF6007FDBE6 /* SVGAPlayer.m */,
+				88086BE71F60EBF6007FDBE6 /* SVGAVideoSpriteEntity.m */,
+				88086BE81F60EBF6007FDBE6 /* SVGA.m */,
+				88086BE91F60EBF6007FDBE6 /* SVGAExporter.m */,
+				88086BEA1F60EBF6007FDBE6 /* SVGAParser.m */,
+				88086BEB1F60EBF6007FDBE6 /* SVGAVideoEntity.h */,
+				88086BEC1F60EBF6007FDBE6 /* SVGAVideoSpriteFrameEntity.m */,
+				88086BED1F60EBF6007FDBE6 /* SVGABezierPath.m */,
+				88086BEE1F60EBF6007FDBE6 /* SVGAContentLayer.h */,
+				88086BEF1F60EBF6007FDBE6 /* SVGAPlayer.h */,
+				88086BF01F60EBF6007FDBE6 /* SVGABitmapLayer.m */,
+				88086BF11F60EBF6007FDBE6 /* SVGAVectorLayer.m */,
+				88086BF21F60EBF6007FDBE6 /* SVGAExporter.h */,
+				88086BF31F60EBF6007FDBE6 /* SVGAParser.h */,
+				88086BF41F60EBF6007FDBE6 /* SVGA.h */,
+				88086BF51F60EBF6007FDBE6 /* SVGAVideoSpriteEntity.h */,
+			);
+			path = SVGAPlayer;
+			sourceTree = "<group>";
+		};
+		88086BF61F60EBF6007FDBE6 /* YYFPSLabel */ = {
+			isa = PBXGroup;
+			children = (
+				88086BF71F60EBF6007FDBE6 /* YYWeakProxy.m */,
+				88086BF81F60EBF6007FDBE6 /* YYFPSLabel.h */,
+				88086BF91F60EBF6007FDBE6 /* YYFPSLabel.m */,
+				88086BFA1F60EBF6007FDBE6 /* YYWeakProxy.h */,
+			);
+			path = YYFPSLabel;
+			sourceTree = "<group>";
+		};
 		880B38ED1F5FD95D001ED095 = {
 			isa = PBXGroup;
 			children = (
 				880B39101F5FDB10001ED095 /* .gitignore */,
-				880B39981F5FE2EE001ED095 /* ERRSVGARefresh */,
+				88086BAD1F60EB59007FDBE6 /* ERRSVGARefresh */,
 				880B38F81F5FD95D001ED095 /* ERSVGARefresh */,
 				880B38F71F5FD95D001ED095 /* Products */,
 				64EABBFB910D478DDEE17206 /* Pods */,
@@ -97,13 +357,6 @@
 				880B38FA1F5FD95D001ED095 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		880B39981F5FE2EE001ED095 /* ERRSVGARefresh */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ERRSVGARefresh;
 			sourceTree = "<group>";
 		};
 		AC62DF6EC518F370F1F65697 /* Frameworks */ = {
@@ -177,8 +430,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				880B39111F5FDB10001ED095 /* .gitignore in Resources */,
+				88086C111F60EBF6007FDBE6 /* loading.svga in Resources */,
 				880B39091F5FD95D001ED095 /* LaunchScreen.storyboard in Resources */,
 				880B39061F5FD95D001ED095 /* Assets.xcassets in Resources */,
+				88086BFF1F60EBF6007FDBE6 /* MJRefresh.bundle in Resources */,
 				880B39041F5FD95D001ED095 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,9 +499,42 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88086C181F60EBF6007FDBE6 /* SVGAParser.m in Sources */,
+				88086C0B1F60EBF6007FDBE6 /* MJRefreshGifHeader.m in Sources */,
+				88086C131F60EBF6007FDBE6 /* SVGAVideoEntity.m in Sources */,
+				88086C0F1F60EBF6007FDBE6 /* MJRefreshAutoFooter.m in Sources */,
+				88086C1F1F60EBF6007FDBE6 /* ERRefreshSVGAHeader.m in Sources */,
+				88086C001F60EBF6007FDBE6 /* UIScrollView+MJExtension.m in Sources */,
+				88086C0A1F60EBF6007FDBE6 /* MJRefreshStateHeader.m in Sources */,
+				88086C011F60EBF6007FDBE6 /* NSBundle+MJRefresh.m in Sources */,
+				88086BFD1F60EBF6007FDBE6 /* UIScrollView+MJRefresh.m in Sources */,
+				88086C191F60EBF6007FDBE6 /* SVGAVideoSpriteFrameEntity.m in Sources */,
+				88086C101F60EBF6007FDBE6 /* MJRefreshComponent.m in Sources */,
+				88086C0C1F60EBF6007FDBE6 /* MJRefreshFooter.m in Sources */,
+				88086C051F60EBF6007FDBE6 /* MJRefreshBackNormalFooter.m in Sources */,
+				88086C071F60EBF6007FDBE6 /* MJRefreshAutoGifFooter.m in Sources */,
+				88086C081F60EBF6007FDBE6 /* MJRefreshAutoNormalFooter.m in Sources */,
+				88086C091F60EBF6007FDBE6 /* MJRefreshNormalHeader.m in Sources */,
 				880B39011F5FD95D001ED095 /* ViewController.m in Sources */,
+				88086C031F60EBF6007FDBE6 /* MJRefreshBackGifFooter.m in Sources */,
+				88086C171F60EBF6007FDBE6 /* SVGAExporter.m in Sources */,
+				88086C1A1F60EBF6007FDBE6 /* SVGABezierPath.m in Sources */,
 				880B38FE1F5FD95D001ED095 /* AppDelegate.m in Sources */,
+				88086C041F60EBF6007FDBE6 /* MJRefreshBackStateFooter.m in Sources */,
+				88086C1E1F60EBF6007FDBE6 /* YYFPSLabel.m in Sources */,
+				88086C121F60EBF6007FDBE6 /* SVGAContentLayer.m in Sources */,
+				88086C161F60EBF6007FDBE6 /* SVGA.m in Sources */,
+				88086C1B1F60EBF6007FDBE6 /* SVGABitmapLayer.m in Sources */,
+				88086C061F60EBF6007FDBE6 /* MJRefreshAutoStateFooter.m in Sources */,
+				88086C0D1F60EBF6007FDBE6 /* MJRefreshHeader.m in Sources */,
 				880B38FB1F5FD95D001ED095 /* main.m in Sources */,
+				88086C1C1F60EBF6007FDBE6 /* SVGAVectorLayer.m in Sources */,
+				88086BFE1F60EBF6007FDBE6 /* MJRefreshConst.m in Sources */,
+				88086C0E1F60EBF6007FDBE6 /* MJRefreshBackFooter.m in Sources */,
+				88086C1D1F60EBF6007FDBE6 /* YYWeakProxy.m in Sources */,
+				88086C021F60EBF6007FDBE6 /* UIView+MJExtension.m in Sources */,
+				88086C151F60EBF6007FDBE6 /* SVGAVideoSpriteEntity.m in Sources */,
+				88086C141F60EBF6007FDBE6 /* SVGAPlayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

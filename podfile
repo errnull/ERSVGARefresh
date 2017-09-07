@@ -1,6 +1,6 @@
 
 target 'ERSVGARefresh' do
 
-pod 'MJRefresh'
+pod 'SSZipArchive'
 
 end
