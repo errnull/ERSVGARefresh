@@ -8,11 +8,13 @@
 
 #import "ERRefreshSVGAHeader.h"
 #import "SVGAVideoEntity.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface ERRefreshSVGAHeader()
 {
     __unsafe_unretained SVGAPlayer * _aPlayer;
 }
+@property (nonatomic, strong) NSDictionary *stateCache;
 @end
 
 @implementation ERRefreshSVGAHeader
@@ -35,40 +37,40 @@ static SVGAParser *_parser;
     return _parser;
 }
 
-#pragma Public Method
-- (void)setAnimationWithURL:(SVGAVideoEntity *)videoItem
-                   duration:(NSTimeInterval)duration
-                   forState:(MJRefreshState)state
-{
-    self.aPlayer.videoItem = videoItem;
-    self.aPlayer.stopWhenTracking = NO;
-    if (videoItem.videoSize.height > self.mj_h) {
-        self.mj_h = 100;
+- (NSDictionary *)stateCache{
+    if (!_stateCache) {
+        _stateCache = @{
+                        @(MJRefreshStateIdle) : @"MJRefreshStateIdle",
+                        
+                        @(MJRefreshStatePulling) : @"MJRefreshStatePulling",
+                        
+                        @(MJRefreshStateRefreshing) : @"MJRefreshStateRefreshing",
+                        
+                        @(MJRefreshStateWillRefresh) : @"MJRefreshStateWillRefresh",
+                        
+                        @(MJRefreshStateNoMoreData) : @"MJRefreshStateNoMoreData"
+                        };
     }
+    return _stateCache;
 }
+#pragma Public Method
 
 - (void)setAnimationWithURL:(nonnull NSURL *)svgaURL
                    forState:(MJRefreshState)state
 {
     [[self parser] parseWithURL:svgaURL
-         completionBlock:^(SVGAVideoEntity * _Nullable videoItem) {
-             
-             [self setAnimationWithURL:videoItem
-                              duration:videoItem.frames * videoItem.FPS
-                              forState:state];
-         } failureBlock:nil];
+                completionBlock:^(SVGAVideoEntity * _Nullable videoItem) {
+                    
+                } failureBlock:nil];
 }
 
 - (void)setAnimationWithData:(NSData *)data
                     forState:(MJRefreshState)state {
-    
+
         [[self parser] parseWithData:data
-                     cacheKey:@"loading"
-              completionBlock:^(SVGAVideoEntity * _Nonnull videoItem) {
-                  [self setAnimationWithURL:videoItem
-                                   duration:videoItem.frames * videoItem.FPS
-                                   forState:state];
-              } failureBlock:nil];
+                            cacheKey:self.stateCache[@(state)]
+                     completionBlock:nil
+                        failureBlock:nil];
 }
 
 #pragma 父类方法
@@ -85,6 +87,10 @@ static SVGAParser *_parser;
     
     if (self.state != MJRefreshStateIdle || !self.aPlayer || pullingPercent > 1) return;
     
+    if (self.aPlayer.videoItem != [SVGAVideoEntity readCache:self.stateCache[@(MJRefreshStateIdle)]]){
+        self.aPlayer.videoItem = [SVGAVideoEntity readCache:self.stateCache[@(MJRefreshStateIdle)]];
+    }
+    
     [self.aPlayer stepToPercentage:pullingPercent andPlay:NO];
 }
 
@@ -92,12 +98,16 @@ static SVGAParser *_parser;
 {
     [super placeSubviews];
     
+    self.mj_h = 60;
+    
     self.stateLabel.hidden = YES;
     self.lastUpdatedTimeLabel.hidden = YES;
     
+    self.aPlayer.stopWhenTracking = NO;
 //    self.aPlayer.mj_size = self.aPlayer.videoItem.videoSize;
-    self.aPlayer.mj_size = CGSizeMake(100, 100);
-    self.aPlayer.mj_x = self.center.x - 50;
+    self.aPlayer.mj_size = CGSizeMake(80, 60);
+    self.aPlayer.mj_x = self.center.x - 30;
+    
     
 //    self.aPlayer.frame = self.bounds;
 //    if (self.stateLabel.hidden && self.lastUpdatedTimeLabel.hidden) {
@@ -119,11 +129,9 @@ static SVGAParser *_parser;
 {
     MJRefreshCheckState
     
-    NSLog(@"state: ---  %ld",(long)state);
-    
     // 根据状态做事情
     if (state == MJRefreshStatePulling || state == MJRefreshStateRefreshing) {
-        
+        self.aPlayer.videoItem = [SVGAVideoEntity readCache:self.stateCache[@(state)]];
         [self.aPlayer stepToFrame:0 andPlay:YES];
         
     } else if (state == MJRefreshStateIdle) {

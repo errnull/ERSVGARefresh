@@ -29,19 +29,19 @@
     
     ERRefreshSVGAHeader *header = [ERRefreshSVGAHeader headerWithRefreshingTarget:self refreshingAction:@selector(loadNewData)];
 
-    [header setAnimationWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"loading.svga" ofType:nil]] forState:MJRefreshStateIdle];
-    
     // 设置普通状态的动画图片
-//    [header setAnimationWithURL:[NSURL URLWithString:@"https://github.com/yyued/SVGA-Samples/blob/master/TwitterHeart.svga?raw=true"] forState:MJRefreshStateIdle];
+    [header setAnimationWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"draging.svga" ofType:nil]]
+                        forState:MJRefreshStateIdle];
     
-    //    // 设置即将刷新状态的动画图片（一松开就会刷新的状态）
-    //    [header setAnimationWithURL:[NSURL URLWithString:@"https://github.com/yyued/SVGA-Samples/blob/master/TwitterHeart.svga?raw=true"] forState:MJRefreshStatePulling];
-    //
-    //    // 设置正在刷新状态的动画图片
-    //    [header setAnimationWithURL:[NSURL URLWithString:@"https://github.com/yyued/SVGA-Samples/blob/master/TwitterHeart.svga?raw=true"] forState:MJRefreshStateRefreshing];
+    // 设置即将刷新状态的动画图片（一松开就会刷新的状态）
+    [header setAnimationWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"loading.svga" ofType:nil]]
+                        forState:MJRefreshStatePulling];
+    
+    // 设置正在刷新状态的动画图片
+    [header setAnimationWithData:[NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"loading.svga" ofType:nil]]
+                        forState:MJRefreshStateRefreshing];
     
     self.tableView.mj_header = header;
-    
     
     [self testFPSLabel];
 }
